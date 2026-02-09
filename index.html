@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/shape-30.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/6fdac8400a.js" crossorigin="anonymous"></script> 
+     <link href="/dist/styles.css" rel="stylesheet">
+     <title>YourBank</title>
+</head>
+<body class="bg-[#191919]">
+<!--header-bg-img-->
+    <div class="absolute -z-10 top-0 left-0 w-1/2 h-1/2"><img src="img/home-img-Design.png" alt="Error-img-hero-bg"></div>
+    
+<!--header -content-->
+    <header class="sticky top-1 flex justify-between items-center w-[83%] mx-auto bg-[#1C1C1C] px-5 py-4 rounded-full mt-10 mb-20 z-80 md:top-3">
+         <div >
+             <a href="index.html"><img src="img/Logo.png" alt="Error-img-logo"></a>
+         </div>
+         <!--mobile menu icon-->
+           <div class="md:hidden">
+              <button id="mobile-menu-button"><i class="fa-solid fa-bars text-white text-[2rem]"></i></button>
+           </div>
+
+
+          <!--nav menu-->
+          <nav class="hidden md:flex items-center  space-x-6">
+              <a href="index.html" class="select-nav">Home</a>
+              <a href="career.html" class="nav">Careers</a>
+              <a href="about.html" class="nav">About</a>
+              <a href="security.html" class="nav">Security</a>
+          </nav>
+
+          <div class="hidden md:flex items-center space-x-4">
+              <a href="signup.html" class="nav">Sign up</a>
+              <a href="login.html" class="btn">Login</a>
+          </div>
+    </header>
+
+<!--mobile menu-->       
+   <div id="mobile-menu" class="fixed inset-0 bg-[#191919]/95 z-50 flex flex-col items-center justify-center hidden"> 
+        <div class=" absolute top-4 right-4">
+             <button id="close-menu-button"> <i class="fa-solid fa-xmark text-white text-[1.5rem]"></i></button>
+        </div>
+        <nav class="flex flex-col items-center space-y-6">
+            <a href="index.html" class="select-nav">Home</a>
+             <a href="about.html" class="nav">About</a>
+            <a href="career.html" class="nav">Careers</a>
+            <a href="security.html" class="nav">Security</a>
+            <a href="signup.html" class="nav">Sign up</a>
+            <a href="login.html" class="btn">Login</a>
+            
+        </nav>
+   </div>
+
+
+<!--Main content-->
+  <main class="flex flex-col xl:flex-row items-start justify-between md:py-12 w-[80%] mx-auto ">
+    <!--Main-section-1-->
+      <section class="flex-1">
+          <div class="flex items-center bottom-4">
+              <span class="text-white bg-light px-4 py-2 rounded-full">
+                 <i class="fa-solid fa-circle-check text-gray"></i>
+                 No LLC Required, No Credit Check.
+              </span>
+          </div> 
+          <h1 class="text-5xl md:text-[4rem] text-white font-bold mb-2">
+              Welcome to YourBank <br>
+               Empowering Your <span class="text-gray">
+                Financial Journey
+               </span>
+          </h1>
+          <p class="text-gray-300 mb-8">At YourBank, our mission is to provide comprehensive banking solutions that empower individuals and businesses to achieve their financial goals. We are committed to delivering personalized and innovative services that prioritize our customers' needs.</p>
+          <div>
+             <button class="btn">Open Account</button>
+          </div>
+      </section>
+
+      <!--Main-section-2-->
+      <section class="flex-1 flex flex-col items-end relative mt-12 md:mt-15 lg:mt-15 xl:mt-0 ">
+        <div class=" relative flex justify-end w-full h-full md:left-30  -z-10 ">
+             <img src="img/Arrow.png" alt="Error img-arrow" class="absolute right-0">
+        </div>
+        <div class="absolute -top-10 left-10 md:left-22 lg:left-32 z-10 mt-8 md:mt-0  bg-lime-gray rounded-lg shadow-lg cursor-pointer">
+             <div class="flex items-center bg-left px-4 py-2  shadow-lg">
+                <div class="bg-gray size-8 rounded-full flex items-center justify-center"><i class="fa-solid fa-plus "></i></div>
+                <div>
+             
+                    <div class="text-white font-bold text-lg">+ $5000,00</div>
+                   <div class="text-xs text-gray-400">Monthly Income</div>
+               </div>
+             </div>
+        </div>
+
+        <!--cards-->
+          <div class="bg-[#1C1C1C] rounded-2xl outline outline-lime-200/5 p-8 w-full max-w-md mt-12 md:mt-0 relative z-0 2xl:mr-36 mb-8 ">
+             <div>
+                 <h3 class="text-white font-semibold mb-4">Your Transactions</h3>
+                 <div class="space-y-2 relative">
+                      <div class="flex items-center justify-between rounded-xl bg-light px-4 py-3">
+                        <div class="flex items-center">
+                             <span class="bg-gray size-8 rounded-full flex items-center justify-center "><i class="fa-solid fa-minus"></i></span>
+                             <div class="ml-3">
+                                <div class="text-white font-medium">Transaction</div>
+                                <div class="text-gray-400">Joel Kenley</div>
+                             </div>
+                        </div>
+                        <div class="text-red-400 font-semibold">
+                            -$68.00
+                        </div>
+                      </div>
+                      <div class="flex items-center justify-between rounded-xl bg-light px-4 py-3  opacity-60">
+                        <div class="flex items-center">
+                             <span class="bg-1a size-8 rounded-full flex items-center justify-center "><i class="fa-solid fa-minus text-lime-400"></i></span>
+                             <div class="ml-3">
+                                <div class="text-white font-medium">Transaction</div>
+                                <div class="text-gray-400">Mark Smith</div>
+                             </div>
+                        </div>
+                        <div class="text-red-400 font-semibold">
+                            -$68.00
+                        </div>
+                      </div>
+                      <div class="flex items-center justify-between rounded-xl bg-light px-4 py-3 opacity-30">
+                        <div class="flex items-center ">                            
+                                <span class="bg-1a size-8 rounded-full flex items-center justify-center "><i class="fa-solid fa-minus text-lime-400"></i></span>   
+                             <div class="ml-3">
+                                <div class="text-white font-medium">Transaction</div>
+                                <div class="text-gray-400">Lenen Roy</div>
+                             </div>
+                        </div>
+                        <div class="text-red-400 font-semibold">
+                            -$68.00
+                        </div>
+                      </div>
+                 </div>
+             </div>
+             <div class="mt-8 ">
+                 <h3 class="text-white font-semibold mb-4">Money Exchange</h3>
+                 <div class="overflow-hidden rounded-xl border border-lime-400/5">
+                    <table class="w-full border-collapse bg-light">
+                        <tr class="border border-b border-lime-400/5">
+                            <td class="p-4 border-r border-lime-400/5">
+                                <div class="flex justify-center items-center gap-3">
+                                    <div><img src="img/Image.png" alt="Error-flag-1"></div>
+                                    <div>
+                                        <h4 class="text-white font-semibold text-lg">INR</h4>
+                                        <p class="text-gray-400 text-xs">Indian Rupees</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="p-4">
+                                <div class="flex justify-center items-center gap-3">
+                                    <div><img src="img/Image-(1).png" alt="Error-flag-1"></div>
+                                    <div>
+                                        <h4 class="text-white text-lg font-medium">USD</h4>
+                                        <p class="text-gray-400 text-xs">United States Dollar</p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr >
+                            <td class="p-4 border-r border-lime-400/5">
+                                <div class="text-white text-center text-2xl">50,000</div>
+                            </td>
+                            <td class="p-4 border-r border-lime-400/5">
+                                <div class="text-white text-center text-2xl">12.00</div>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                 </div>
+                 <div class="flex justify-center "><button class="text-gray cursor-pointer transition hover:text-light duration-500 w-full bg-lime-gray py-3  mt-3 rounded-full hover:bg-gray-400 ">Exchange</button></div>
+             </div>
+          </div>
+          <div class="flex items-center justify-end ">
+              <div class="bg-lime-gray rounded-full px-6 py-3 flex items-center ">
+                <span class="text-white text-lg mr-4">Supported Currency</span>
+                <div class=" bg-1a flex items-center justify-center rounded-full px-2 py-2 gap-3 cursor-pointer">
+                    <div class="size-8 bg-lime-gray rounded-full flex items-center justify-center"><span class="text-gray ">₹</span></div>
+                    <div class="size-8 bg-lime-gray rounded-full flex items-center justify-center"><span class="text-gray ">$</span></div>
+                    <div class="size-8 bg-lime-gray rounded-full flex items-center justify-center"><span class="text-gray ">₿</span></div>
+                    <div class="size-8 bg-lime-gray rounded-full flex items-center justify-center"><span class="text-gray ">£</span></div>
+                </div>
+              </div>
+          </div>
+      </section>
+
+  </main>
+
+
+   
+  <!--product-section-->
+
+    <section class="py-16">
+         <div class="w-[80%] mx-auto">
+             <div class="flex flex-col lg:flex-row md:items-center justify-between">
+                  <div class="w-[70%]">
+                      <h2 class="text-white text-3xl font-bold md:text-4xl mb-2">Our <span class="text-gray">Products</span></h2>
+                      <p class="text-gray-300 mb-5 lg:mb-0 ">Discover how YourBank has transformed lives with innovative digital solutions and personalized customer service.  See why our clients trust us for a secure and prosperous financial journey</p>
+                  </div>
+                  <div class="flex rounded-full p-2 w-fit  bg-[#1C1C1C]">
+                             <a href="#" class="btn">For Individuals</a>
+                             <a href="#" class="flex items-center justify-center text-gray-300 font-medium p-2 transition hover:text-gray hover:scale-105 ease-in duration-300">For Businesses</a>
+                  </div>
+             </div>
+
+             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+                 <div class="flex flex-col items-center text-center px-4 border   py-3 rounded-2xl hover:shadow-lg shadow-lime-900 border-lime-400/5 hover:scale-105 transition-all duration-500">
+                     <div class="mb-6">
+                        <img src="img/Icon.png" alt="Error-icon-1">
+                    </div>
+                    <h3 class="text-white font-semibold text-xl md:text-2xl mb-2">Checking Accounts</h3>
+                    <p class="text-gray-400">Enjoy easy and convenient access to your funds with our range of checking account options. Benefit from features such as online and mobile banking, debit cards, and free ATM access.</p>
+                 </div>
+
+
+                 <div class="flex flex-col items-center text-center px-4 border   py-3 rounded-2xl hover:shadow-lg shadow-lime-900 border-lime-400/5 hover:scale-105 transition-all duration-500">
+                     <div class="mb-6">
+                        <img src="img/Icon(1).png" alt="Error-icon-1">
+                    </div>
+                    <h3 class="text-white font-semibold text-xl md:text-2xl mb-2">Loans and Mortgages</h3>
+                    <p class="text-gray-400">Realize your dreams with our flexible loan and mortgage options. From personal loans to home mortgages, our experienced loan officers are here to guide you through the application process and help you secure the funds you need.</p>
+                 </div>
+
+
+                 <div class="flex flex-col items-center text-center px-4 border   py-3 rounded-2xl hover:shadow-lg shadow-lime-900 border-lime-400/5 hover:scale-105 transition-all duration-500">
+                     <div class="mb-6">
+                        <img src="img/Icon(2).png" alt="Error-icon-1">
+                    </div>
+                    <h3 class="text-white font-semibold text-xl md:text-2xl mb-2">Savings Accounts</h3>
+                    <p class="text-gray-400">Build your savings with our competitive interest rates and flexible savings account options. Whether you're saving for a specific goal or want to grow your wealth over time, we have the right account for you.</p>
+                 </div>  
+                
+             </div>
+         </div>
+    </section>
+
+    
+    <!--use case section-->
+    <section class="py-16">
+          <div class="w-[80%] mx-auto">
+              <h2 class="text-gray font-bold text-3xl md:text-4xl mb-2">Use Cases</h2>
+              <p class="text-gray-300 mb-5 md:mb-12  ">At YourBank, we cater to the diverse needs of individuals and businesses alike, offering a wide range of financial solutions</p>
+
+              
+              <div class="grid md:grid-cols-2 gap-12 mb-2 "> 
+                <!--left card-->                   
+                    <div class="grid grid-cols-2 relative gap-6 p-4 md:p-12 bg-[#1C1C1C] rounded-xl">
+                       <div class="absolute z-0">
+                        <img src="img/left-abstract.png" alt="Error" class="w-48">
+                       </div> 
+                      <div class="bg-1a py-6 rounded-xl flex flex-col gap-4 items-center justify-center relative z-10 outline-lime-400/5 transition-all hover:scale-105 hover:shadow-lg shadow-lime-900 duration-500">
+                          <img src="img/IconContainer.png" alt="">
+                          <h3 class="text-white font-medium mb-2 text-center px-1">Managing Personal <br> Finances</h3>
+                      </div>
+                      <div class="bg-1a py-6 rounded-xl flex flex-col gap-4 items-center justify-center relative z-10 outline-lime-400/5 transition-all hover:scale-105 hover:shadow-lg shadow-lime-900 duration-500">
+                          <img src="img/Icon Container.png" alt="">
+                          <h3 class="text-white font-medium mb-2 text-center px-1">Saving for the Future</h3>
+                      </div>
+                      <div class="bg-1a py-6 rounded-xl flex flex-col gap-4 items-center justify-center relative z-10 outline-lime-400/5 transition-all hover:scale-105 hover:shadow-lg shadow-lime-900 duration-500">
+                          <img src="img/Icon Container (1).png" alt="">
+                          <h3 class="text-white font-medium mb-2 text-center px-1">Homeownership
+                      </div>
+                      <div class="bg-1a py-6 rounded-xl flex flex-col gap-4 items-center justify-center relative z-10 outline-lime-400/5 transition-all hover:scale-105 hover:shadow-lg shadow-lime-900 duration-500">
+                          <img src="img/Icon Container (2).png" alt="">
+                          <h3 class="text-white font-medium mb-2 text-center px-1">Education Funding
+                      </div>
+                    </div>
+                    
+                    <!--right card-->
+                   <div class="py-10">
+                      <h3 class="text-2xl font-bold text-white mb-4">
+                        For Individuals
+                      </h3>
+                       <p class="text-gray-300 mb-8">For individuals, our mortgage services pave the way to homeownership, and our flexible personal loans provide vital support during various life milestones. We also prioritize retirement planning, ensuring a financially secure future for our customers</p>
+
+                      <div class="grid grid-cols-3 gap-8">
+                          <div class="border-r border-lime-400/5 border-dashed">
+                              <h4 class="text-[2rem] md:text-[2rem] lg:text-[4rem] text-bold
+                               mb-2 text-gray">78%</h4>
+                              <p class="text-gray-300">Secure Retirement Planning</p>
+                          </div>  
+                          <div class="border-r border-lime-400/5 border-dashed">
+                              <h4 class="text-[2rem] md:text-[2rem] lg:text-[4rem] text-bold
+                               mb-2 text-gray">63%</h4>
+                              <p class="text-gray-300">Manageable Debt Consolidation</p>
+                          </div>
+                          <div>
+                              <h4 class="text-[2rem] md:text-[2rem] lg:text-[4rem] text-bold
+                               mb-2 text-gray">91%</h4>
+                              <p class="text-gray-300">Reducing financial burdens</p>
+                          </div> 
+                       </div>
+
+                       <div>
+                          <button class="btn mt-5">Learn More</button>
+                       </div>
+                  
+                   </div>
+
+                   <!--left card business-->
+                   <div class="py-10">
+                      <h3 class="text-2xl font-bold text-white mb-4">
+                        For Business
+                      </h3>
+                       <p class="text-gray-300 mb-8"> For businesses, we empower growth with working capital solutions that optimize cash flow, and our tailored financing options fuel business expansion. Whatever your financial aspirations, YourBank is committed to providing the right tools and support to achieve them</p>
+
+                      <div class="grid grid-cols-3 gap-8">
+                          <div class="border-r border-lime-400/5 border-dashed">
+                              <h4 class="text-[2rem] md:text-[2rem] lg:text-[4rem] text-bold
+                               mb-2 text-gray">65%</h4>
+                              <p class="text-gray-300">Cash Flow Management</p>
+                          </div>  
+                          <div class="border-r border-lime-400/5 border-dashed">
+                              <h4 class="text-[2rem] md:text-[2rem] lg:text-[4rem] text-bold
+                               mb-2 text-gray">70%</h4>
+                              <p class="text-gray-300">Drive Business Expansion</p>
+                          </div>
+                          <div>
+                              <h4 class="text-[2rem] md:text-[2rem] lg:text-[4rem] text-bold
+                               mb-2 text-gray">45%</h4>
+                              <p class="text-gray-300">Streamline payroll processing</p>
+                          </div> 
+                       </div>
+
+                       <div>
+                          <button class="btn mt-5">Learn More</button>
+                       </div>
+                  
+                   </div>
+
+                    <!--right card business-->
+                   <div class="grid grid-cols-2 relative gap-6 p-4 md:p-12 bg-[#1C1C1C] rounded-xl">
+                       <div class="absolute z-0">
+                        <img src="img/left-abstract.png" alt="Error" class="w-48">
+                       </div> 
+                      <div class="bg-1a py-6 rounded-xl flex flex-col gap-4 items-center justify-center relative z-10 outline-lime-400/5 transition-all hover:scale-105 hover:shadow-lg shadow-lime-900 duration-500">
+                          <img src="img/Icon-Container(1).png" alt="">
+                          <h3 class="text-white font-medium mb-2 text-center px-1">Startups and <br> Entrepreneurs</h3>
+                      </div>
+                      <div class="bg-1a py-6 rounded-xl flex flex-col gap-4 items-center justify-center relative z-10 outline-lime-400/5 transition-all hover:scale-105 hover:shadow-lg shadow-lime-900 duration-500">
+                          <img src="img/Icon-Container(3).png" alt="">
+                          <h3 class="text-white font-medium mb-2 text-center px-1">Cash Flow Management</h3>
+                      </div>
+                      <div class="bg-1a py-6 rounded-xl flex flex-col gap-4 items-center justify-center relative z-10 outline-lime-400/5 transition-all hover:scale-105 hover:shadow-lg shadow-lime-900 duration-500">
+                          <img src="img/Icon-Container(2).png" alt="">
+                          <h3 class="text-white font-medium mb-2 text-center px-1">Business Expansion
+                      </div>
+                      <div class="bg-1a py-6 rounded-xl flex flex-col gap-4 items-center justify-center relative z-10 outline-lime-400/5 transition-all hover:scale-105 hover:shadow-lg shadow-lime-900 duration-500">
+                          <img src="img/Icon-Container(4).png" alt="">
+                          <h3 class="text-white font-medium mb-2 text-center px-1">Payment Solutions
+                      </div>
+                    </div>
+              </div>
+          </div>
+    </section>
+
+
+   <!--Feature section-->
+   <section class="py-16">
+    <div class="w-[80%] mx-auto">
+        <h2 class="text-white text-4xl font-bold mb-2">Our <span class="text-gray">Features</span></h2>
+        <p class="text-gray-300 mb-16 md:w-[70%]">Experience a host of powerful features at YourBank, including seamless online banking, secure transactions, and personalized financial insights,  all designed to enhance your banking experience</p>
+
+        <div class="flex flex-col lg:flex-row">
+            <!-- left part -->
+             <div class="w-full bg-[#1C1C1C] md:w-80 h-[13rem] mb-8 lg::mb-0 md:mr-8 ">
+                <div class="border-l-4 border-gray pl-4 py-4 mb-5 bg-gray/5 cursor-pointer">
+                    <p class="text-white font-medium">Online Banking</p>
+                </div>
+                <div class="border-l-4  pl-4 py-4 mb-5 border-gray/5  cursor-pointer">
+                    <p class="text-white font-medium">Financial</p>
+                </div>
+                <div class="border-l-4  pl-4 py-4 mb-5 border-gray/5 cursor-pointer">
+                    <p class="text-white font-medium">Customer Support</p>
+                </div>
+             </div>
+
+             <!-- right part -->
+              <div class="flex-1">
+                  <div class="grid lg:grid-cols-2 gap-6">
+                      <div class="bg-1C px-10 py-12 rounded-xl outline-gray/5 outline hover:shadow-lg shadow-lime-900 border-lime-400/5 hover:scale-105 transition-all duration-500">
+                          <div class="flex justify-between items-start mb-4">
+                               <h3 class="text-white font-semibold text-xl">24/7 Account Access</h3>
+                               <div class="text-2xl rotate-45 text-gray">
+                                    <i class="fa-solid fa-arrow-up"></i>
+                               </div>
+                          </div>
+                          <p class="text-gray-400">Enjoy the convenience of accessing your accounts anytime, anywhere through our secure online banking platform. Check balances, transfer funds, and pay bills with ease.</p>
+                      </div>
+                      <div class="bg-[#1C1C1C] px-10 py-12 rounded-xl outline-gray/5 outline hover:shadow-lg shadow-lime-900 border-lime-400/5 hover:scale-105 transition-all duration-500">
+                          <div class="flex justify-between items-start mb-4">
+                               <h3 class="text-white font-semibold text-xl">Mobile Banking App</h3>
+                               <div class="text-2xl rotate-45 text-gray">
+                                    <i class="fa-solid fa-arrow-up"></i>
+                               </div>
+                          </div>
+                          <p class="text-gray-400">Stay connected to your finances on the go with our user-friendly mobile banking app. Easily manage your accounts, deposit checks, and make payments from your smartphone or tablet.</p>
+                      </div>
+                      <div class="bg-[#1C1C1C] px-10 py-12 rounded-xl outline-gray/5 outline hover:shadow-lg shadow-lime-900 border-lime-400/5 hover:scale-105 transition-all duration-500">
+                          <div class="flex justify-between items-start mb-4">
+                               <h3 class="text-white font-semibold text-xl">Secure Transactions</h3>
+                               <div class="text-2xl rotate-45 text-gray">
+                                    <i class="fa-solid fa-arrow-up"></i>
+                               </div>
+                          </div>
+                          <p class="text-gray-400">Rest assured knowing that your transactions are protected by industry-leading security measures. We employ encryption and multi-factor authentication to safeguard your financial information.</p>
+                      </div>
+                      <div class="bg-[#1C1C1C] px-10 py-12 rounded-xl outline-gray/5 outline hover:shadow-lg shadow-lime-900 border-lime-400/5 hover:scale-105 transition-all duration-500">
+                          <div class="flex justify-between items-start mb-4">
+                               <h3 class="text-white font-semibold text-xl">Bill Pay and Transfers</h3>
+                               <div class="text-2xl rotate-45 text-gray">
+                                    <i class="fa-solid fa-arrow-up"></i>
+                               </div>
+                          </div>
+                          <p class="text-gray-400">Save time and avoid late fees with our convenient bill pay service. Set up recurring payments or make one-time transfers between your accounts with just a few clicks.</p>
+                      </div>
+                  </div>
+              </div>
+        </div>
+    </div>     
+
+   </section>
+
+
+   <!-- faq section -->
+    <section class="py-16">
+      <div class="w-[80%] mx-auto">
+           <h2 class="text-white text-4xl font-bold mb-2"> <span class="text-gray">Frequently</span> Asked Questions</h2>
+           <p class="text-gray-300 pb-12">Still you have any questions? Contact our Team via support@yourbank.com</p>
+  
+           <div class="grid lg:grid-cols-2 gap-7  ">
+              <div class="outline outline-gray/5 py-9 px-12 rounded-xl hover:shadow-lg shadow-lime-900 border-lime-400/5 hover:scale-105 transition-all duration-500">
+                   <h3 class="text-white font-bold text-xl mb-5 pb-6 border-b border-gray/5 border-dashed">
+                     How do I open an account with YourBank?
+                   </h3>
+                   <p class="text-gray-400">Opening an account with YourBank is easy. Simply visit our website and click on the "Open an Account" button. Follow the prompts, provide the required information, and complete the application process. If you have any questions or need assistance, our customer support team is available to help.</p>
+              </div>
+              <div class="outline outline-gray/5 py-9 px-12 rounded-xl hover:shadow-lg shadow-lime-900 border-lime-400/5 hover:scale-105 transition-all duration-500">
+                   <h3 class="text-white font-bold text-xl mb-5 pb-6 border-b border-gray/5 border-dashed">
+                    What documents do I need to provide to apply for a loan?
+                   </h3>
+                   <p class="text-gray-400">The documents required for a loan application may vary depending on the type of loan you are applying for. Generally, you will need to provide identification documents (such as a passport or driver's license), proof of income (such as pay stubs or tax returns), and information about the collateral (if applicable). Our loan officers will guide you through the specific requirements during the application process.</p>
+              </div>
+              <div class="outline outline-gray/5 py-9 px-12 rounded-xl hover:shadow-lg shadow-lime-900 border-lime-400/5 hover:scale-105 transition-all duration-500">
+                   <h3 class="text-white font-bold text-xl mb-5 pb-6 border-b border-gray/5 border-dashed ">
+                      How can I access my accounts online?
+                   </h3>
+                   <p class="text-gray-400">Accessing your accounts online is simple and secure. Visit our website and click on the "Login" button. Enter your username and password to access your accounts. If you haven't registered for online banking, click on the "Enroll Now" button and follow the registration process. If you need assistance, our customer support team is available to guide you.</p>
+              </div>
+              <div class="outline outline-gray/5 py-9 px-12 rounded-xl hover:shadow-lg shadow-lime-900 border-lime-400/5 hover:scale-105 transition-all duration-500">
+                   <h3 class="text-white font-bold text-xl mb-5 pb-6 border-b border-gray/5 border-dashed ">
+                    Are my transactions and personal information secure?
+                   </h3>
+                   <p class="text-gray-400 ">At YourBank, we prioritize the security of your transactions and personal information. We employ industry-leading encryption and multi-factor authentication to ensure that your data is protected. Additionally, we regularly update our security measures to stay ahead of emerging threats. You can bank with confidence knowing that we have robust security systems in place.</p>
+              </div>
+           </div>
+           
+           <div class="flex justify-center mt-12 items-center">
+                <button class="btn flex items-center">Load All FAQ’s <i class="fa-solid fa-angle-down text-lg ml-2 "></i></button>
+           </div>
+      </div>
+    </section>
+
+
+     <!-- our testimonials -->
+       <section class="py-16">
+            <div class="w-[80%] mx-auto">
+               <div class="flex flex-col lg:flex-row md:items-center justify-between">
+                  <div class="w-[70%]">
+                      <h2 class="text-white text-3xl font-bold md:text-4xl mb-2">Our <span class="text-gray">Testimonials</span></h2>
+                      <p class="text-gray-300 mb-5 lg:mb-0 ">Discover how YourBank has transformed lives with innovative digital solutions and personalized customer service. See why our clients trust us for a secure and prosperous financial journey</p>
+                  </div>
+                  <div class="flex rounded-full p-2 w-fit  bg-[#1C1C1C]">
+                             <a href="#" class="btn">For Individuals</a>
+                             <a href="#" class="flex items-center justify-center text-gray-300 font-medium p-2 transition hover:text-gray hover:scale-105 ease-in duration-300">For Businesses</a>
+                  </div>
+             </div>
+               <div class="relative mt-12">
+                    <div class="flex gap-6 overflow-hidden md:mx-20">
+                           <!--testimonial 1-card-->
+                             <div class="bg-[#1c1c1c] px-8 py-12 outline-gray/6 rounded-xl min-w-75 md:min-w-87   lg:mask-luminance mask-l-from-white mask-l-from-50% mask-l-to-black ">
+                               <div class="text-gray text-6xl mb-6">
+                                     <i class="fa-solid fa-quote-left"></i>
+                               </div>                               
+                                <p class="text-gray-400 mb-8">I recently started my own business, and YourBank has been instrumental in helping me set up my business accounts and secure the financing I needed. Their expert guidance and tailored solutions have been invaluable.</p>
+                               <p class="text-gray font-bold">John D</p>
+                            </div>
+                             <!--testimonial 2-card-->
+                            <div class="bg-[#1c1c1c] px-8 py-12 outline-gray/6 rounded-xl min-w-75 md:min-w-87 mask-luminance lg:mask-none mask-r-from-white mask-r-from-10% mask-r-to-black">
+                               <div class="text-gray text-6xl mb-6">
+                                     <i class="fa-solid fa-quote-left"></i>
+                               </div>                               
+                                <p class="text-gray-400 mb-8">I recently started my own business, and YourBank has been instrumental in helping me set up my business accounts and secure the financing I needed. Their expert guidance and tailored solutions have been invaluable.</p>
+                               <p class="text-gray font-bold">John D</p>
+                            </div>
+                            <!--testimonial 3-card-->
+                            <div class="bg-[#1c1c1c] px-8 py-12 outline-gray/6 rounded-xl min-w-75 md:min-w-87 lg:mask-luminance mask-r-from-white mask-r-from-50% mask-r-to-black">
+                               <div class="text-gray text-6xl mb-6 ">
+                                     <i class="fa-solid fa-quote-left"></i>
+                               </div>                               
+                                <p class="text-gray-400 mb-8">I recently started my own business, and YourBank has been instrumental in helping me set up my business accounts and secure the financing I needed. Their expert guidance and tailored solutions have been invaluable.</p>
+                               <p class="text-gray font-bold">John D</p>
+                            </div>
+
+                    </div>
+
+                    <button class="absolute top-1/2 -left-5 -translate-1/2 bg-gray/5 rounded-full size-9 hover:bg-gray/50 cursor-pointer transition-all duration-300"><i class="fa-solid fa-arrow-left text-gray"></i>         
+                    </button>
+                     <button class="absolute  top-1/2 -right-11 -translate-1/2 bg-gray/5 rounded-full size-9 hover:bg-gray/50 cursor-pointer transition-all duration-300 ">
+                         <i class="fa-solid fa-arrow-right text-gray"></i>        
+                    </button>
+               </div>
+            </div>
+      </section>
+
+    <!-- call for action-->
+     <section class="py-16">
+          <div class="w-[80%] mx-auto">
+                 <div class="mt-20 bg-[#1C1C1C] rounded-xl p-12 relative overflow-hidden">
+                    <div class="absolute top-0 left-0">
+                       <img src="img/left-abstract.png" class="w-58 " alt="">
+                    </div>
+                    <div class="flex flex-col lg:flex-row items-center justify-between relative z-10">
+                    <div class="w-[70%]">
+                        <h3 class="text-white text-4xl font-bold mb-2">
+                       Start your financial journey with <span class="text-gray">YourBank today!</span>  
+                    </h3>
+                    <p class="text-gray-300">Ready to take control of your finances? Join YourBank now, and let us help you achieve your financial goals with our tailored solutions and exceptional customer service</p>
+                    
+                    </div>
+                    <div class="mt-5 lg:mt-0">
+                       <button class="btn">Open Account</button>
+                    </div>
+                 </div>
+                 
+                 </div>  
+                 
+                 
+          </div>
+     </section>
+
+        
+    <!--footer section-->
+     <footer class="bg-[#1C1C1C] py-16">
+        <div class="w-[80%] mx-auto">
+            <div class="flex items-center flex-col justify-center ">
+                    <div>
+                        <img src="img/Logo.png" class="w-60 brightness-110 contrast-100" alt="Error logo-img">
+                    </div>
+                    <div class="flex flex-col lg:flex-row items-center gap-3 md:gap-4 lg:gap-5 mt-7 mb-5">
+                        <a href="#" class="md:text-2xl font-semibold text-white "><i class="fa-solid fa-envelope text-gray mr-2"></i>hello@skillbirdge.com</a>
+                         <a href="#" class="md:text-2xl font-semibold text-white "><i class="fa-solid fa-phone text-gray mr-2"></i>+91 91813 23 2309</a>
+                          <a href="#" class="md:text-2xl font-semibold text-white "><i class="fa-solid fa-location-dot text-gray mr-2"></i>Somewhere in the World</a>
+                    </div>
+
+            </div>
+            <div class="border  border-gray/5 mt-3 flex flex-col lg:flex-row justify-between items-center  px-7 transition duration-300 gag-6 bg-1a rounded-xl lg:rounded-full hover:shadow-xl shadow-gray/10">
+                <div class="flex flex-col lg:flex-row items-center ">
+                    <div class="flex gap-5 my-5 ">
+                        <a href="#" ><div class="size-10 bg-gray rounded-full flex items-center justify-center"><i class="fa-brands fa-facebook-f "></i></div></a>
+                        <a href="#"><div class="size-10 bg-gray rounded-full flex items-center justify-center">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div></a>
+                        <a href="#"><div class="size-10 bg-gray rounded-full flex items-center justify-center"><i class="fa-brands fa-linkedin-in"></i></div></a>
+                    </div>
+                </div>
+                <div class="text-gray-400 mb-3 lg:mb-none">
+                    YourBank All Rights Reserved
+                </div>
+                <div class="text-gray-400 mb-3">
+                   Privacy Policy | Terms of Service
+                </div>
+            </div>
+        </div>
+
+     </footer>
+
+
+
+
+
+
+
+
+
+
+    <!--js section-->
+    <script src="script.js"></script>
+</body>
+</html>

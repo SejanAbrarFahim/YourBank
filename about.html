@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/shape-30.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/6fdac8400a.js" crossorigin="anonymous"></script> 
+     <link href="/dist/styles.css" rel="stylesheet">
+     <title>YourBank</title>
+</head>
+<body class="bg-[#191919]">
+<!--header-bg-img-->
+    <div class="absolute -z-10 top-0 left-0 w-1/2 h-1/2"><img src="img/home-img-Design.png" alt="Error-img-hero-bg"></div>
+    
+<!--header -content-->
+    <header class="sticky top-1 flex justify-between items-center w-[83%] mx-auto bg-[#1C1C1C] px-5 py-4 rounded-full mt-10 mb-0 z-80 md:top-3">
+         <div >
+             <a href="index.html"><img src="img/Logo.png" alt="Error-img-logo"></a>
+         </div>
+         <!--mobile menu icon-->
+           <div class="md:hidden">
+              <button id="mobile-menu-button"><i class="fa-solid fa-bars text-white text-[2rem]"></i></button>
+           </div>
+
+
+          <!--nav menu-->
+          <nav class="hidden md:flex items-center  space-x-6">
+              <a href="index.html" class="nav">Home</a>
+              <a href="career.html" class="nav">Careers</a>
+              <a href="about.html" class="select-nav">About</a>
+              <a href="security.html" class="nav">Security</a>
+          </nav>
+
+          <div class="hidden md:flex items-center space-x-4">
+              <a href="signup.html" class="nav">Sign up</a>
+              <a href="login.html" class="btn">Login</a>
+          </div>
+    </header>
+
+<!--mobile menu-->       
+   <div id="mobile-menu" class="fixed inset-0 bg-[#191919]/95 z-50 flex flex-col items-center justify-center hidden"> 
+        <div class=" absolute top-4 right-4">
+             <button id="close-menu-button"> <i class="fa-solid fa-xmark text-white text-[1.5rem]"></i></button>
+        </div>
+        <nav class="flex flex-col items-center space-y-6">
+            <a href="index.html" class="nav">Home</a>
+             <a href="about.html" class="select-nav">About</a>
+            <a href="career.html" class="nav">Careers</a>
+            <a href="security.html" class="nav">Security</a>
+            <a href="signup.html" class="nav">Sign up</a>
+            <a href="login.html" class="btn">Login</a>
+            
+        </nav>
+   </div>
+
+
+<!--Main content-->
+ <main class="py-16">
+     <section class="w-[90%] lg:w-[70%] mx-auto">
+        
+              <div class="xl:mt-0 lg:mt-10 bg-1C rounded-xl p-7 relative ">
+                    <div class="absolute top-0 right-0">
+                       <img src="img/right-abstract(1).png" class="w-58 " alt="">
+                    </div>
+                    <div class="flex flex-col lg:flex-row  justify-between lg:relative z-10 ">
+                          <div class="bg-1a w-full lg:w-[40%] h-fit px-4 py-7  relative lg:absolute lg:rounded-l-2xl lg:rounded-br-[70px] lg:ml-10 lg:mb-10  rounded-t-2xl">
+                           <h5 class="text-gray-300 py-3">Welcome to YourBank</h5>
+                             <h3 class="text-white text-2xl 2xl:text-5xl py-5">Where Banking Meets  <span class="text-gray">Excellence !</span></h3>
+                             <p class="text-gray-400 text-xs 2xl:text-xl">At YourBank, we understand the importance of keeping your financial information secure. We employ robust security measures and advanced technologies to protect your personal and financial data. Rest assured that when you bank with us, your security is our utmost priority.</p>
+                          </div>
+                          <div class="lg:ml-60 xl:ml-80"><img src="img/Image-about.png"  alt=""></div>
+                    </div>
+              </div>
+        
+     </section>
+ </main>
+
+
+ <!-- our values section -->
+   <section class="py-16">
+       <div class="w-[80%] mx-auto">
+           <div class=" py-17">
+               <h2 class="text-gray text-3xl font-bold md:text-4xl mb-2">Mission & Vision</h2>
+               <p class="text-gray-300 mb-5">We envision being a leading force in the industry, driven by innovation, integrity, and inclusivity, creating a brighter financial future for individuals and businesses while maintaining a strong commitment to customer satisfaction and community development</p>
+           </div>
+           <div class="flex items-center lg:flex-row flex-col my-15 lg:my-0 ">
+            <div class="flex-1 border border-gray/5 rounded-2xl  bg-1C  pt-10 relative overflow-hidden">
+               <div class="absolute top-0 ">
+                  <img src="img/Abstract Design.png" class=" w-[100%]" alt="">
+               </div>
+               <div class="absolute top-0 right-0 ">
+                  <img src="img/Abstract Design.png" class=" w-[100%]" alt="">
+               </div>
+               <div class="flex justify-center z-10  relative px-10">
+                  <img src="img/Image1-l.png" class="" alt="">
+               </div>
+            </div>
+            <div class="border-l-4 py-5 px-7 border-gray/50 flex-1 ">
+                  <h2 class="  text-3xl font-bold md:text-5xl mb-2 text-[#4C4C4D]">Mission</h2>
+                  <p class="text-gray-400">At YourBank, our mission is to empower our customers to achieve financial success. We are dedicated to delivering innovative banking solutions that cater to their unique needs. Through personalized services, expert guidance, and cutting-edge technology, we aim to build strong, lasting relationships with our customers. Our mission is to be their trusted partner, helping them navigate their financial journey and realize their dreams.</p>
+              </div>
+           </div>
+           <div class="flex items-center lg:flex-row flex-col ">
+            
+            <div class="border-r-4 py-5 px-7 border-gray/50 flex-1 ">
+                  <h2 class="  text-3xl font-bold md:text-5xl mb-2 text-[#4C4C4D]">Vision</h2>
+                  <p class="text-gray-400">Our vision at YourBank is to redefine banking by creating a seamless and personalized experience for our customers. We envision a future where banking is accessible, transparent, and tailored to individual preferences. Through continuous innovation and collaboration, we strive to be at the forefront of the industry, setting new standards for customer-centric banking. Our vision is to be the preferred financial institution, known for our unwavering commitment to excellence, trust, and customer satisfaction.</p>
+              </div>
+              <div class="flex-1 border border-gray/5 rounded-2xl  bg-1C  pt-10 relative overflow-hidden xl:-mt-20">
+               <div class="absolute top-0 ">
+                  <img src="img/Abstract Design.png" class=" w-[100%]" alt="">
+               </div>
+               <div class="absolute top-0 right-0 ">
+                  <img src="img/Abstract Design.png" class=" w-[100%]" alt="">
+               </div>
+               <div class="flex justify-center z-10  relative px-10">
+                  <img src="img/Image (1).png" class="" alt="">
+               </div>
+            </div>
+           </div>
+       </div>
+   </section>
+  
+
+
+
+
+   <!-- press section -->
+    <section class="py-16">
+      <div class="w-[80%] mx-auto">
+           <h2 class="text-white text-4xl font-bold mb-2"> <span class="text-gray"> Press Releases</h2>
+           <p class="text-gray-300 pb-12">Stay updated with the latest happenings and exciting developments at YourBank through our press releases.</p>
+  
+           <div class="grid lg:grid-cols-2 gap-7  ">
+              <div class="outline outline-gray/5 py-9 px-12 rounded-xl hover:shadow-lg shadow-lime-900 border-lime-400/5 hover:scale-105 transition-all duration-500">
+                 <div>
+                    <img src="img/Image (2).png" alt="Error">
+                 </div>
+                   <h3 class="text-white font-bold text-xl mb-1 pb-6  mt-5">
+                    YourBank Launches New Rewards Program to Enhance Customer Loyalty and Satisfaction
+                   </h3>
+                   <div class="flex flex-col lg:flex-row items-center gap-6 my-6">
+                     <div class="text-gray-300 px-4 bg-[#141313] rounded-full border border-gray/5">Location: India</div>
+                     <div class="text-gray-300 px-4 bg-[#141313] rounded-full border border-gray/5">Date: 06/11/2024</div>
+                   </div>
+                   <p class="text-gray-400">YourBank is pleased to announce the introduction of our new Rewards Program, aimed at rewarding our loyal customers and enhancing their banking experience. The program offers exclusive benefits, discounts, and personalized offers tailored to individual customer preferences. With this initiative, YourBank reaffirms its commitment to delivering exceptional value and building lasting relationships with our valued customers. </p>
+              </div>
+              
+               <div class="outline outline-gray/5 py-9 px-12 rounded-xl hover:shadow-lg shadow-lime-900 border-lime-400/5 hover:scale-105 transition-all duration-500">
+                 <div>
+                    <img src="img/Image (3).png" alt="Error">
+                 </div>
+                   <h3 class="text-white font-bold text-xl mb-1 pb-6  mt-5">
+                    YourBank Expands Branch Network with Opening of New Location in Chennai
+                   </h3>
+                   <div class="flex flex-col lg:flex-row gap-6 my-6 items-center">
+                     <div class="text-gray-300 px-4 bg-[#141313] rounded-full border border-gray/5">Location: India</div>
+                     <div class="text-gray-300 px-4 bg-[#141313] rounded-full border border-gray/5">Date: 12/11/2024</div>
+                   </div>
+                   <p class="text-gray-400">YourBank is excited to announce the grand opening of our newest branch in [City]. This expansion is a testament to our continued commitment to serving our customers and providing them with convenient access to our comprehensive range of banking services. The new branch will feature state-of-the-art facilities, a team of dedicated professionals, and a personalized approach to banking, further strengthening our presence in the local community.</p>
+              </div>
+
+               <div class="outline outline-gray/5 py-9 px-12 rounded-xl hover:shadow-lg shadow-lime-900 border-lime-400/5 hover:scale-105 transition-all duration-500">
+                 <div>
+                    <img src="img/Image (4).png" alt="Error">
+                 </div>
+                   <h3 class="text-white font-bold text-xl mb-1 pb-6  mt-5 ">
+                    YourBank Partners with Local Nonprofit to Support Financial Education Initiatives
+                   </h3>
+                   <div class="flex flex-col lg:flex-row gap-6 my-6 items-center">
+                     <div class="text-gray-300 px-4 bg-[#141313] rounded-full border border-gray/5">Location: India</div>
+                     <div class="text-gray-300 px-4 bg-[#141313] rounded-full border border-gray/5">Date: 24/12/2024</div>
+                   </div>
+                   <p class="text-gray-400">YourBank is excited to unveil our new Sustainable Banking Initiative, demonstrating our commitment to environmental responsibility. This initiative includes a range of sustainable banking products and services, such as green loans, eco-friendly investment options, and paperless banking solutions. By incorporating sustainable practices into our operations, we aim to contribute to a greener future while providing innovative banking solutions to our customers.</p>
+              </div>
+
+               <div class="outline outline-gray/5 py-9 px-12 rounded-xl hover:shadow-lg shadow-lime-900 border-lime-400/5 hover:scale-105 transition-all duration-500">
+                 <div>
+                    <img src="img/Image (5).png" alt="Error">
+                 </div>
+                   <h3 class="text-white font-bold text-xl mb-1 pb-6  mt-5">
+                    YourBank Launches Sustainable Banking Initiative to Promote Environmental Responsibility
+                   </h3>
+                   <div class="flex flex-col lg:flex-row gap-6 my-6 items-center">
+                     <div class="text-gray-300 px-4 bg-[#141313] rounded-full border border-gray/5">Location: India</div>
+                     <div class="text-gray-300 px-4 bg-[#141313] rounded-full border border-gray/5">Date: 28/12/2024</div>
+                   </div>
+                   <p class="text-gray-400">YourBank is excited to unveil our new Sustainable Banking Initiative, demonstrating our commitment to environmental responsibility. This initiative includes a range of sustainable banking products and services, such as green loans, eco-friendly investment options, and paperless banking solutions. By incorporating sustainable practices into our operations, we aim to contribute to a greener future while providing innovative banking solutions to our customers.</p>
+              </div>
+             
+           </div>
+           
+           
+      </div>
+    </section>
+
+
+     <!-- our testimonials -->
+       <section class="py-16">
+            <div class="w-[80%] mx-auto">
+               <div class="flex flex-col lg:flex-row md:items-center justify-between">
+                  <div class="w-[70%]">
+                      <h2 class="text-white text-3xl font-bold md:text-4xl mb-2">Our <span class="text-gray">Testimonials</span></h2>
+                      <p class="text-gray-300 mb-5 lg:mb-0 ">Discover how YourBank has transformed lives with innovative digital solutions and personalized customer service. See why our clients trust us for a secure and prosperous financial journey</p>
+                  </div>
+                  <div class="flex rounded-full p-2 w-fit  bg-[#1C1C1C]">
+                             <a href="#" class="btn">For Individuals</a>
+                             <a href="#" class="flex items-center justify-center text-gray-300 font-medium p-2 transition hover:text-gray hover:scale-105 ease-in duration-300">For Businesses</a>
+                  </div>
+             </div>
+               <div class="relative mt-12">
+                    <div class="flex gap-6 overflow-hidden md:mx-20">
+                           <!--testimonial 1-card-->
+                             <div class="bg-[#1c1c1c] px-8 py-12 outline-gray/6 rounded-xl min-w-75 md:min-w-87   lg:mask-luminance mask-l-from-white mask-l-from-50% mask-l-to-black ">
+                               <div class="text-gray text-6xl mb-6">
+                                     <i class="fa-solid fa-quote-left"></i>
+                               </div>                               
+                                <p class="text-gray-400 mb-8">I recently started my own business, and YourBank has been instrumental in helping me set up my business accounts and secure the financing I needed. Their expert guidance and tailored solutions have been invaluable.</p>
+                               <p class="text-gray font-bold">John D</p>
+                            </div>
+                             <!--testimonial 2-card-->
+                            <div class="bg-[#1c1c1c] px-8 py-12 outline-gray/6 rounded-xl min-w-75 md:min-w-87 mask-luminance lg:mask-none mask-r-from-white mask-r-from-10% mask-r-to-black">
+                               <div class="text-gray text-6xl mb-6">
+                                     <i class="fa-solid fa-quote-left"></i>
+                               </div>                               
+                                <p class="text-gray-400 mb-8">I recently started my own business, and YourBank has been instrumental in helping me set up my business accounts and secure the financing I needed. Their expert guidance and tailored solutions have been invaluable.</p>
+                               <p class="text-gray font-bold">John D</p>
+                            </div>
+                            <!--testimonial 3-card-->
+                            <div class="bg-[#1c1c1c] px-8 py-12 outline-gray/6 rounded-xl min-w-75 md:min-w-87 lg:mask-luminance mask-r-from-white mask-r-from-50% mask-r-to-black">
+                               <div class="text-gray text-6xl mb-6 ">
+                                     <i class="fa-solid fa-quote-left"></i>
+                               </div>                               
+                                <p class="text-gray-400 mb-8">I recently started my own business, and YourBank has been instrumental in helping me set up my business accounts and secure the financing I needed. Their expert guidance and tailored solutions have been invaluable.</p>
+                               <p class="text-gray font-bold">John D</p>
+                            </div>
+
+                    </div>
+
+                    <button class="absolute top-1/2 -left-5 -translate-1/2 bg-gray/5 rounded-full size-9 hover:bg-gray/50 cursor-pointer transition-all duration-300"><i class="fa-solid fa-arrow-left text-gray"></i>         
+                    </button>
+                     <button class="absolute  top-1/2 -right-11 -translate-1/2 bg-gray/5 rounded-full size-9 hover:bg-gray/50 cursor-pointer transition-all duration-300 ">
+                         <i class="fa-solid fa-arrow-right text-gray"></i>        
+                    </button>
+               </div>
+            </div>
+      </section>
+
+    <!-- start your career section-->
+     <section class="py-16">
+          <div class="w-[80%] mx-auto">
+                 <div class="mt-20 bg-[#1C1C1C] rounded-xl p-12 relative overflow-hidden">
+                    <div class="absolute top-0 left-0">
+                       <img src="img/left-abstract.png" class="w-58 " alt="">
+                    </div>
+                    <div class="flex flex-col lg:flex-row items-center justify-between relative z-10">
+                    <div class="w-[70%]">
+                        <h3 class="text-white text-4xl font-bold mb-2">
+                       Start your financial journey with <span class="text-gray">YourBank today!</span>  
+                    </h3>
+                    <p class="text-gray-300">Ready to take control of your finances? Join YourBank now, and let us help you achieve your financial goals with our tailored solutions and exceptional customer service</p>
+                    
+                    </div>
+                    <div class="mt-5 lg:mt-0">
+                       <button class="btn">Open Account</button>
+                    </div>
+                 </div>
+                 
+                 </div>  
+                 
+                 
+          </div>
+     </section>
+
+        
+    <!--footer section-->
+     <footer class="bg-[#1C1C1C] py-16">
+        <div class="w-[80%] mx-auto">
+            <div class="flex items-center flex-col justify-center ">
+                    <div>
+                        <img src="img/Logo.png" class="w-60 brightness-110 contrast-100" alt="Error logo-img">
+                    </div>
+                    <div class="flex flex-col lg:flex-row items-center gap-3 md:gap-4 lg:gap-5 mt-7 mb-5">
+                        <a href="#" class="md:text-2xl font-semibold text-white "><i class="fa-solid fa-envelope text-gray mr-2"></i>hello@skillbirdge.com</a>
+                         <a href="#" class="md:text-2xl font-semibold text-white "><i class="fa-solid fa-phone text-gray mr-2"></i>+91 91813 23 2309</a>
+                          <a href="#" class="md:text-2xl font-semibold text-white "><i class="fa-solid fa-location-dot text-gray mr-2"></i>Somewhere in the World</a>
+                    </div>
+
+            </div>
+            <div class="border  border-gray/5 mt-3 flex flex-col lg:flex-row justify-between items-center  px-7 transition duration-300 gag-6 bg-1a rounded-xl lg:rounded-full hover:shadow-xl shadow-gray/10">
+                <div class="flex flex-col lg:flex-row items-center ">
+                    <div class="flex gap-5 my-5 ">
+                        <a href="#" ><div class="size-10 bg-gray rounded-full flex items-center justify-center"><i class="fa-brands fa-facebook-f "></i></div></a>
+                        <a href="#"><div class="size-10 bg-gray rounded-full flex items-center justify-center">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div></a>
+                        <a href="#"><div class="size-10 bg-gray rounded-full flex items-center justify-center"><i class="fa-brands fa-linkedin-in"></i></div></a>
+                    </div>
+                </div>
+                <div class="text-gray-400 mb-3 lg:mb-none">
+                    YourBank All Rights Reserved
+                </div>
+                <div class="text-gray-400 mb-3">
+                   Privacy Policy | Terms of Service
+                </div>
+            </div>
+        </div>
+
+     </footer>
+
+
+
+
+
+
+
+
+
+
+    <!--js section-->
+    <script src="script.js"></script>
+</body>
+</html>
